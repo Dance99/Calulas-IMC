@@ -12,3 +12,6 @@ if (IMC < 18.5){
 } else {
     categoria = "Obesidad";
 }
+
+//resultado//
+alert('su IMC es ${imc.toFixed})
