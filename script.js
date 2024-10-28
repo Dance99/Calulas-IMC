@@ -1,17 +1,26 @@
 // ingrese su altura y peso//
-const peso =parseFloat(prompt("ingrese su peso en kg:"));
-const altura = parseFloat(prompt("ingrese su altura en m: "));
+function calcularIMC(peso, altura){
+    return peso / (altura * altura)
+}
+let peso =parseFloat(prompt("ingrese su peso en kg:"))
+let altura = parseFloat(prompt("ingrese su altura en m: "))
+
+const IMC = peso / (altura * altura)
 
 //clasificar//
-if (IMC < 18.5){
-    categoria = " Bajo peso";
-} else if (IMC < 24.9){
-    categoria = "Peso normal";
-} else if (IMC < 29.9){
-    categoria = "Sobre peso";
-} else {
-    categoria = "Obesidad";
+function clasificarIMC (IMC) {
+    if (IMC < 18.5){
+        return " Bajo peso";
+    } else if (IMC >=18.5 && IMC < 24.9){
+        return "Peso normal";
+    } else if (IMC >=25 && IMC < 29.9){
+        return "Sobre peso";
+    } else {
+        return "Obesidad";
+    }
 }
 
+
 //resultado//
-alert('su IMC es ${imc.toFixed})
+console.log('su IMC es: ${IMC.toFixed (2)}')
+console.log('su categoria es: ${categoria}')
