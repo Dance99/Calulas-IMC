@@ -2,7 +2,6 @@
 function calcularIMC(peso, altura) {
     return peso / (altura * altura)
 }
-
 let peso = parseFloat(prompt("ingrese su peso en kg:"))
 let altura = parseFloat(prompt("ingrese su altura en m: "))
 
